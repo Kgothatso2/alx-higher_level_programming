@@ -24,7 +24,6 @@ class Base:
         else:
             return dumps(list_dictionaries)
 
- 
     @staticmethod
     def from_json_string(json_string):
         """Unjsonifies a dictionary."""
@@ -32,7 +31,7 @@ class Base:
             return []
         return loads(json_string)
 
-     @classmethod
+    @classmethod
     def save_to_file(cls, list_objs):
         """Saves jsonified object to file."""
         if list_objs is not None:
